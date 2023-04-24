@@ -13,7 +13,6 @@
 				crossorigin="anonymous" referrerpolicy="no-referrer" />
 		<title>Diagnostic de digitalisation</title>
 	</head>
-
 <body>
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
@@ -42,43 +41,43 @@
       </div>
     </div>
   </nav>
-  <h1 class="text-center m-5">Diagnostic de digitalisation de l'entreprise Kermel</h1>
-  <div class="container">
-  <h2 class="m-5">Synthèse</h2>
-  <div class="row">
-    <div class="col">
-      <h3>Axe réactivité : 3,1 /5</h3>
-      <h3>Axe compétences : 3,5 /5</h3>
-      <h3>Axe numérique : 3,6 /5</h3>
-    </div>
-    <div class="col">
-      <canvas id="myChart"></canvas>
-    </div>
-  </div>
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script>
-  const ctx = document.getElementById('myChart');
-
-  new Chart(ctx, {
-    type: 'radar',
-    data: {
-      labels: ['Axe réactivité', 'Axe compétences', 'Axe numérique'],
-      datasets: [{
-        label: 'Score',
-        data: ["3.1", "3.5", "3.6"],
-        borderWidth: 1
-      }]
-    },
-    options: {
-      scales: {
-        y: {
-          beginAtZero: true
-        }
-      },
-    }
-  });
-</script>
-
+    <header>
+        <h1 class="text-center">Analyse numérique pour le Système d'information</h1>
+    </header>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Domaine métier</th>
+                <th scope="col">Questionnement </th>
+                <th scope="col">Score</th>
+                <th scope="col">Justification</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4">Systèmes d'information</th>
+                <td>Le SI s’est-il adapté à l’évolution des modes de travail et management ? </td>
+                <td>2</td>
+                <td>Réunions et télétravail intégré au sein de l'entreprise</td>
+            </tr>
+          <tr>
+             
+            <td>Comment sont traités l’accès et la diffusion de l’ information orientée métier et/ou hiérarchique ?</td>
+            <td>2</td>
+            <td>Accès aux données géré en fonction des profils </td>
+          </tr>
+          <tr>
+              
+              <td>Existe-t-il une démarche de sécurisation des données numériques dans votre entreprise ?</td>
+              <td>2</td>
+              <td>Stratégie en place respecte la RGPD</td>
+          </tr>
+          <tr>
+              
+              <td>En quoi votre service SI est-il un acteur du déploiement de la stratégie digitale de votre entreprise ?</td>
+              <td>2</td>
+              <td>Service IT proactif visant un parc informatique optimal et performant</td>
+          </tr>
+        </tbody>
+      </table>
 </body>
